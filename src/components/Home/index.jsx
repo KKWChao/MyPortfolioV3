@@ -6,7 +6,7 @@ import Button from '@mui/material/Button'
 const Home = () => {
   return (
     <Box className="">
-      <Button variant='contained'>test</Button>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore exercitationem rerum ratione corporis libero deleniti fugiat numquam facere commodi, tenetur ipsam, quasi iste vel, sed dolorum pariatur molestiae ab deserunt.
     </Box>
   );
 };

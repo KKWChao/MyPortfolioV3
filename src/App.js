@@ -1,8 +1,15 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, Navbar, Projects, Resume } from "./components";
-import { Box, Stack } from "@mui/system";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import "./App.css";
+import './App.css'
+import { Routes, Route } from "react-router-dom";
+import {
+  Home,
+  Navbar,
+  SideDrawer,
+  Projects,
+  Resume,
+} from "./components";
+import Layout from './Layout/layout';
+
+import { ThemeProvider, createTheme, Box, styled } from "@mui/material";
 
 const theme = createTheme({
   palette: {
@@ -15,27 +22,26 @@ const theme = createTheme({
   },
 });
 
+const FlexBoxed = styled(Box)({
+  display: "flex",
+  FormatAlignJustify: "space-between",
+});
+
 function App() {
+
   return (
     <ThemeProvider theme={theme}>
-      <Box className="App">
-        <Stack>
-          <Navbar />
-          <Home />
-        </Stack>
-      </Box>
+      <FlexBoxed>
+        <SideDrawer />
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/resumes" element={<Resume />} />
+          </Routes>
+        </Layout>
+      </FlexBoxed>
     </ThemeProvider>
-
-    /* 
-      <Router>
-        <Navbar /> 
-        <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/resume' element={<Resume />} />
-        </Routes>
-      </Router>
-    */
   );
 }
 
