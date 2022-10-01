@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Resume = () => {
+function Resume() {
   return (
-    <div>index</div>
+    <div>tester</div>
   )
 }
 

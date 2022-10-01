@@ -4,6 +4,13 @@
   --tertiary: #1A1D1A;
   --text: #8AB0AB;
   --dark: #03120E;
+
+
+  --primary1: #716A5C;
+  --secondary1: #A39B8B;
+  --tertiary1: #5DB7DE;
+  --text1: #F1E9DB;
+  --dark1: #07020D;
 }
 
 body {

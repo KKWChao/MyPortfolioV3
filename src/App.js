@@ -1,47 +1,31 @@
-import './App.css'
+import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import {
-  Home,
-  Navbar,
-  SideDrawer,
-  Projects,
-  Resume,
-} from "./components";
-import Layout from './Layout/layout';
+import { Box, styled } from "@mui/material";
 
-import { ThemeProvider, createTheme, Box, styled } from "@mui/material";
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#3C4F76",
-    },
-    secondary: {
-      main: "#D1BEB0",
-    },
-  },
-});
+import Layout from "./Layout/layout";
+import { Home, Navbar, SideDrawer, Projects, Resume } from "./components";
 
 const FlexBoxed = styled(Box)({
   display: "flex",
-  FormatAlignJustify: "space-between",
+  height: "100vh",
 });
 
 function App() {
-
   return (
-    <ThemeProvider theme={theme}>
-      <FlexBoxed>
-        <SideDrawer />
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/resumes" element={<Resume />} />
-          </Routes>
-        </Layout>
-      </FlexBoxed>
-    </ThemeProvider>
+    <FlexBoxed>
+      {/* Need to have sidebar and navbar switch when screen gets too small */}
+      {/* <Navbar /> */}
+      <SideDrawer />
+      <Layout>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </Layout>
+    </FlexBoxed>
   );
 }
 
