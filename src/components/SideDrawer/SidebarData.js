@@ -1,4 +1,3 @@
-import React from 'react'
 import HouseSidingIcon from '@mui/icons-material/HouseSiding';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import ArticleIcon from '@mui/icons-material/Article';
@@ -19,5 +18,4 @@ export const SidebarData = [
     icon: <ArticleIcon />,
     link: "/resume"
   }
-  
 ]

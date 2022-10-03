@@ -1,8 +1,14 @@
-import React from 'react'
+import { Box, Typography, Button } from "@mui/material";
 
 function Projects() {
   return (
-    <div>index</div>
+    <Box p={1} m={2}>
+    <h1>Projects</h1>
+    <Typography>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore exercitationem rerum ratione corporis libero deleniti fugiat numquam facere commodi, tenetur ipsam, quasi iste vel, sed dolorum pariatur molestiae ab deserunt.
+    </Typography>
+    <Button>Test</Button>
+  </Box>
   )
 }
 
