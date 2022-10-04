@@ -1,16 +1,15 @@
 import { Box, Typography, Button } from "@mui/material";
-
+import { ComponentBox } from "../reusables";
 import { SidebarData } from "../SideDrawer/SidebarData";
 
 function Resume() {
   return (
-    <Box p={1} m={2}>
+    <ComponentBox>
       <h1>Resume</h1>
-      {Object.entries(SidebarData).map(([key, item], i) => (
-      <p>{item.title}</p>
-
+      {Object.entries(SidebarData).map(([key, item]) => (
+      <p>{item.title}{key}</p>
       ))}
-    </Box>
+    </ComponentBox>
   );
 }
 

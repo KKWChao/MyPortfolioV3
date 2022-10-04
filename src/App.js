@@ -7,7 +7,7 @@ import { Home, Navbar, SideDrawer, Projects, Resume } from "./components";
 
 const FlexBoxed = styled(Box)({
   display: "flex",
-  height: "100vh",
+  minWidth: '100%'
 });
 
 function App() {

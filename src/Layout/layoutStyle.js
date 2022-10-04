@@ -4,5 +4,6 @@ import { theme } from "../theme";
 
 export const CustomBox = styled(Box) ({
   width: '100%',
-  background: theme.palette.primary.main
+  minHeight: '100vh',
+  background: theme.palette.primary.main,
 })
