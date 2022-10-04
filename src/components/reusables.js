@@ -2,10 +2,10 @@ import { theme } from "../theme";
 import { Box, styled } from "@mui/material"
 
 export const ComponentBox = styled(Box) ({
-  padding: '1rem',
+  padding: '0 5rem',
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center',
+  justifyContent: 'space-around',
   wrap: 'wrap',
   height: '100%',
   zIndex: 0,

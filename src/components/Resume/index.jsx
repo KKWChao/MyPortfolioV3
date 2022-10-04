@@ -7,7 +7,7 @@ function Resume() {
     <ComponentBox>
       <h1>Resume</h1>
       {Object.entries(SidebarData).map(([key, item]) => (
-      <p>{item.title}{key}</p>
+      <p key={key}>{item.title}{key}</p>
       ))}
     </ComponentBox>
   );
