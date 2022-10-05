@@ -13,6 +13,7 @@ function Home() {
           style={{
             borderRadius: "20%",
             width: "15rem",
+            boxShadow: '0 .5rem 1.2rem rgba(0,0,0,.2)'
           }}
         />
       </Box>

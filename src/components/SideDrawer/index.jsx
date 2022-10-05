@@ -1,10 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-import styled from "@emotion/styled";
 import { theme } from "../../theme";
 import { SidebarData } from "./SidebarData";
-import { SideBarBox } from "../reusables";
+import { SideBarBox, StyledLink } from "../reusables";
 
 import {
   Box,
@@ -15,26 +13,18 @@ import {
 } from "@mui/material";
 import { GitHub, LinkedIn } from "@mui/icons-material";
 
-const StyledLink = styled(Link)({
-  color: "inherit",
-  textDecoration: "none",
-  display: "flex",
-  gap: "1rem",
-  justifyContent: "center",
-});
-
 function index() {
   return (
     <SideBarBox>
       <List sx={{ padding: "1rem" }}>
         {Object.entries(SidebarData).map(([key, item]) => (
           <ListItem key={key} disablePadding>
-            <ListItemButton>
-              <StyledLink to={item.link}>
+            <StyledLink to={item.link}>
+              <ListItemButton sx={{ display: "flex", gap: "1rem" }}>
                 {item.icon}
                 <ListItemText primary={item.title} />
-              </StyledLink>
-            </ListItemButton>
+              </ListItemButton>
+            </StyledLink>
           </ListItem>
         ))}
         <ListItem disablePadding>

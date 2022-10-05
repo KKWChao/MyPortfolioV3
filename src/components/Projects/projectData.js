@@ -1,43 +1,43 @@
 export const ProjectData = [
   {
-    title: 'a',
+    title: 'alpha',
     image: '',
-    description: '',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur exercitationem hic nesciunt, voluptatibus commodi quasi magnam aperiam qui animi eius ipsa dolor, modi nulla reiciendis minima ipsam iste quaerat.',
     githubLink: '',
     deployLink: ''
   },
   {
-    title: 'b',
+    title: 'bravo',
     image: '',
-    description: '',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur exercitationem hic nesciunt, voluptatibus commodi quasi magnam aperiam qui animi eius ipsa dolor, modi nulla reiciendis minima ipsam iste quaerat.',
     githubLink: '',
     deployLink: ''
   },
   {
-    title: 'c',
+    title: 'charlie',
     image: '',
-    description: '',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur exercitationem hic nesciunt, voluptatibus commodi quasi magnam aperiam qui animi eius ipsa dolor, modi nulla reiciendis minima ipsam iste quaerat.',
     githubLink: '',
     deployLink: ''
   },
   {
-    title: 'd',
+    title: 'delta',
     image: '',
-    description: '',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur exercitationem hic nesciunt, voluptatibus commodi quasi magnam aperiam qui animi eius ipsa dolor, modi nulla reiciendis minima ipsam iste quaerat.',
     githubLink: '',
     deployLink: ''
   },
   {
-    title: 'e',
+    title: 'echo',
     image: '',
-    description: '',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur exercitationem hic nesciunt, voluptatibus commodi quasi magnam aperiam qui animi eius ipsa dolor, modi nulla reiciendis minima ipsam iste quaerat.',
     githubLink: '',
     deployLink: ''
   },
   {
-    title: 'f',
+    title: 'foxtrot',
     image: '',
-    description: '',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur exercitationem hic nesciunt, voluptatibus commodi quasi magnam aperiam qui animi eius ipsa dolor, modi nulla reiciendis minima ipsam iste quaerat.',
     githubLink: '',
     deployLink: ''
   },

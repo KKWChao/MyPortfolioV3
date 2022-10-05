@@ -1,5 +1,6 @@
 import { theme } from "../theme";
 import { Box, styled } from "@mui/material"
+import { Link } from 'react-router-dom'
 
 export const ComponentBox = styled(Box) ({
   padding: '0 5rem',
@@ -8,7 +9,6 @@ export const ComponentBox = styled(Box) ({
   justifyContent: 'space-around',
   wrap: 'wrap',
   height: '100%',
-  zIndex: 0,
   color: theme.palette.text.main
 })
 
@@ -19,6 +19,11 @@ export const SideBarBox = styled(Box) ({
   position: 'sticky',
   backgroundColor: theme.palette.secondary.main,
   color: theme.palette.primary.main,
-  boxShadow: 6,
-  zIndex: 10
+  boxShadow: 10
 })
+
+export const StyledLink = styled(Link)({
+  color: "inherit",
+  textDecoration: "none",
+  width: '100%'
+});
