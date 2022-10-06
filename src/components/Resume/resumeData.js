@@ -21,7 +21,7 @@ export const ResumeData = [
       technology: 'Javascript, React, HTML/CSS, Node, Mongoose'
     },
     secondProject: {
-      title: 'Counting-Cals',
+      title: 'Counting-Cals1',
       github: 'github.com/JacobReeder/Counting-Calz-2.0#',
       deploy: 'the-cal-zone.herokuapp.com/',
       description: 'A mobile first application for tracking calorie intake',

@@ -28,5 +28,5 @@ npm i
 ## My Resources
 
 - [Coolers.io](https://coolors.co/383f51-dddbf1-3c4f76-d1beb0-ab9f9d)
-- [Youtuebe]()
+- [Youtube]()
 - []
