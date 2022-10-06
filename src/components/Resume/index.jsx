@@ -30,7 +30,8 @@ function Resume() {
             <br />
           </Typography>
         </Box>
-        <Box className="projects">
+        {/* Not needed since the project page exists */}
+        {/* <Box className="projects">
           <Typography variant="h4">{ResumeData[2].title}</Typography>
           <Typography variant="h6">
             <Grid>
@@ -50,7 +51,7 @@ function Resume() {
               ))}
             </Grid>
           </Typography>
-        </Box>
+        </Box> */}
         <Box className="experience">
           <Typography variant="h4">{ResumeData[3].title}</Typography>
           <Typography variant="h6">
@@ -71,6 +72,18 @@ function Resume() {
         </Box>
         <Box className="education">
           <Typography variant="h4">{ResumeData[4].title}</Typography>
+          <Box>
+            {Object.entries(ResumeData[4]).map(([key, item]) => (
+              <Box key={key}>
+                <Typography variant="h6">{item.name}</Typography>
+                <Typography variant="h7">
+                  {item.location} {item.completed}
+                </Typography>
+                <Typography>{item.cert}</Typography>
+                <Typography>{item.cert1}</Typography>
+              </Box>
+            ))}
+          </Box>
         </Box>
       </Box>
       <Button sx={{ color: theme.palette.text.dark }}>Download</Button>

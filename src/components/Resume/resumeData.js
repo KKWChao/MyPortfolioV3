@@ -21,7 +21,7 @@ export const ResumeData = [
       technology: 'Javascript, React, HTML/CSS, Node, Mongoose'
     },
     secondProject: {
-      title: 'Counting-Cals1',
+      title: 'Counting-Cals',
       github: 'github.com/JacobReeder/Counting-Calz-2.0#',
       deploy: 'the-cal-zone.herokuapp.com/',
       description: 'A mobile first application for tracking calorie intake',
@@ -87,7 +87,7 @@ export const ResumeData = [
       name: 'University of California, Davis',
       location: 'Davis, CA',
       completed: 'June 2019',
-      cert1: 'Bachelor of Science, Statistics<br />Bachelor of Science, Statistics',
+      cert1: 'Bachelor of Science, Statistics, Bachelor of Science, Statistics',
     },
 
   }
