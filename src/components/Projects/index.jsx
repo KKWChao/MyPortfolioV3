@@ -26,12 +26,24 @@ function Projects() {
         columns={{ xs: 4, sm: 8, md: 12 }}
       >
         {Object.entries(ProjectData).map(([index, project]) => (
-          <Grid item xs={2} sm={4} md={4} key={index}>
+          <Grid
+            container
+            direction='column'
+            xs={2}
+            sm={4}
+            md={4}
+            key={index}
+            justify="center"
+            alignItems="center"
+          >
             <Card
               sx={{
+                padding: 1,
+                margin: 1,
                 minWidth: 200,
+                width: 400,
                 maxWidth: 500,
-                padding: "1rem",
+                height: 350,
                 boxShadow: 5,
                 background: theme.palette.secondary.dark,
               }}
@@ -40,10 +52,10 @@ function Projects() {
                 className="projectImages"
                 component="img"
                 alt={project.title}
-                height="140"
+                height="150"
                 image={project.image}
                 sx={{
-                  borderRadius: '0.5rem'
+                  borderRadius: "0.5rem",
                 }}
               />
               <CardContent>
@@ -58,7 +70,7 @@ function Projects() {
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  sx={{ color: theme.palette.text.light }}
+                  sx={{ color: theme.palette.text.light, minHeight: 60 }}
                 >
                   {project.description}
                 </Typography>

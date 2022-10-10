@@ -27,10 +27,10 @@ body {
 }
 
 h1 {
-  padding-bottom: 1rem ;
+  padding-bottom: 2rem ;
 }
 
 .projectImages {
-  width: fit-content;
-  min-height: fit-content;
+  /* width: fit-content;
+  min-height: fit-content; */
 }
