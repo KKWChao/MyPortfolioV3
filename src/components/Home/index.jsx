@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import { ComponentBox, AnimatedDiv } from "../reusables";
+import { AnimatedDiv } from "../reusables";
 
 function Home() {
   return (

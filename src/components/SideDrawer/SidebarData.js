@@ -1,21 +1,21 @@
-import HouseSidingIcon from '@mui/icons-material/HouseSiding';
-import AccountTreeIcon from '@mui/icons-material/AccountTree';
-import ArticleIcon from '@mui/icons-material/Article';
+import HouseSidingIcon from "@mui/icons-material/HouseSiding";
+import AccountTreeIcon from "@mui/icons-material/AccountTree";
+import ArticleIcon from "@mui/icons-material/Article";
 
 export const SidebarData = [
   {
-    title: 'Home',
+    title: "Home",
     icon: <HouseSidingIcon />,
-    link: "/home"
+    link: "/home",
   },
   {
-    title: 'Projects',
+    title: "Projects",
     icon: <AccountTreeIcon />,
-    link: "/projects"
+    link: "/projects",
   },
   {
-    title: 'Resume',
+    title: "Resume",
     icon: <ArticleIcon />,
-    link: "/resume"
-  }
-]
+    link: "/resume",
+  },
+];

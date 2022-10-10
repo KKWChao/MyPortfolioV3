@@ -1,14 +1,13 @@
 import "./App.css";
-
 import { Box, styled } from "@mui/material";
 
 import Layout from "./Layout/layout";
 import AnimatedRoutes from "./components/AnimatedRoutes";
-import {  SideDrawer } from "./components";
+import { SideDrawer } from "./components";
 
 const FlexBoxed = styled(Box)({
   display: "flex",
-  minWidth: '100%'
+  minWidth: "100%",
 });
 
 function App() {
