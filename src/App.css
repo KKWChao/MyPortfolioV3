@@ -29,3 +29,8 @@ body {
 h1 {
   padding-bottom: 1rem ;
 }
+
+.projectImages {
+  width: fit-content;
+  min-height: fit-content;
+}

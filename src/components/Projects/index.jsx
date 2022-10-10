@@ -37,10 +37,14 @@ function Projects() {
               }}
             >
               <CardMedia
+                className="projectImages"
                 component="img"
                 alt={project.title}
                 height="140"
-                image="#"
+                image={project.image}
+                sx={{
+                  borderRadius: '0.5rem'
+                }}
               />
               <CardContent>
                 <Typography
