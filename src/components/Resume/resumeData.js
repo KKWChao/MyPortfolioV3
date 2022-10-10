@@ -1,3 +1,7 @@
+import HtmlIcon from '@mui/icons-material/Html';
+import CssIcon from '@mui/icons-material/Css';
+import JavascriptIcon from '@mui/icons-material/Javascript';
+
 export const ResumeData = [
   {
     title: 'Kelvin Chao',
@@ -6,6 +10,7 @@ export const ResumeData = [
   {
     title: 'Technical Skills',
     frontEnd: 'HTML/CSS, Bootstrap, Javascript, JQuery, React, MUI',
+    frontEndIcons: [<HtmlIcon />, <CssIcon />],
     backEnd: 'Node.js, Express, MySQL, GraphQL, Django, MongoDB, Mongoose, Python, R',
     concepts: 'REST APIs, MVC, JSON, MERN, PWA',
     tools: 'VSCode, Insomnia, PostGreSQL, Git, Github, Heroku, Netlify'

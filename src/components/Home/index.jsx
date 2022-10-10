@@ -1,11 +1,15 @@
-import { Box, Typography, Skeleton } from "@mui/material";
-
-import { ComponentBox } from "../reusables";
+import { Box, Typography } from "@mui/material";
+import { ComponentBox, AnimatedDiv } from "../reusables";
 
 function Home() {
   return (
-    <ComponentBox sx={{ justifyContent: "" }}>
-      <Box align='left'>
+    <AnimatedDiv
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      sx={{ justifyContent: "" }}
+    >
+      <Box align="left">
         {/* add loading later */}
         <img
           src="./assets/Profile.jpg"
@@ -13,7 +17,7 @@ function Home() {
           style={{
             borderRadius: "20%",
             width: "15rem",
-            boxShadow: '0 .5rem 1.2rem rgba(0,0,0,.2)'
+            boxShadow: "0 .5rem 1.2rem rgba(0,0,0,.2)",
           }}
         />
       </Box>
@@ -27,7 +31,7 @@ function Home() {
       </Box>
 
       {/* <Button sx={{ margin: '2rem 0', color: 'black', backgroundColor: 'gray', width: '5rem'}}>Test</Button> */}
-    </ComponentBox>
+    </AnimatedDiv>
   );
 }
 

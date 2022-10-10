@@ -1,23 +1,30 @@
-import { Box, Typography, Button, Grid } from "@mui/material";
-import { ComponentBox } from "../reusables";
+import { Box, Typography, Button, Grid, Paper } from "@mui/material";
+import { AnimatedDiv } from "../reusables";
 import { theme } from "../../theme";
 
 import { ResumeData } from "./resumeData";
 
 function Resume() {
   return (
-    <ComponentBox>
+    <AnimatedDiv
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Typography variant="h1">Resume</Typography>
-      <Box
+      <Paper
         sx={{
+          padding: "2rem",
           backgroundColor: "white",
           minheight: "70%",
         }}
       >
         <Box className="header">
-          <Typography>{ResumeData[0].summary}</Typography>
+          <Typography variant="h6" margin={2}>
+            {ResumeData[0].summary}
+          </Typography>
         </Box>
-        <Box className="skills">
+        <Box className="skills" margin={2}>
           <Typography variant="h4">{ResumeData[1].title}</Typography>
           <Typography>
             Front End: <strong>{ResumeData[1].frontEnd}</strong>
@@ -52,25 +59,21 @@ function Resume() {
             </Grid>
           </Typography>
         </Box> */}
-        <Box className="experience">
+        <Box className="experience" margin={2}>
           <Typography variant="h4">{ResumeData[3].title}</Typography>
           <Typography variant="h6">
             {ResumeData[3].current.role} : {ResumeData[3].current.company},{" "}
             {ResumeData[3].current.location}
           </Typography>
           <Typography>{ResumeData[3].current.time}</Typography>
-          <Typography>
-            {ResumeData[3].current.bullet1}
-            <br />
-            {ResumeData[3].current.bullet2}
-            <br />
-            {ResumeData[3].current.bullet3}
-            <br />
-            {ResumeData[3].current.bullet4}
-            <br />
-          </Typography>
+          <ul style={{ listStyleType: "none" }}>
+            <li>{ResumeData[3].current.bullet1}</li>
+            <li>{ResumeData[3].current.bullet2}</li>
+            <li>{ResumeData[3].current.bullet3}</li>
+            <li>{ResumeData[3].current.bullet4}</li>
+          </ul>
         </Box>
-        <Box className="education">
+        <Box className="education" margin={2}>
           <Typography variant="h4">{ResumeData[4].title}</Typography>
           <Box>
             {Object.entries(ResumeData[4]).map(([key, item]) => (
@@ -85,9 +88,9 @@ function Resume() {
             ))}
           </Box>
         </Box>
-      </Box>
+      </Paper>
       <Button sx={{ color: theme.palette.text.dark }}>Download</Button>
-    </ComponentBox>
+    </AnimatedDiv>
   );
 }
 

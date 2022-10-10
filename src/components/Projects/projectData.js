@@ -1,9 +1,9 @@
 export const ProjectData = [
   {
-    title: 'alpha',
+    title: 'Counting Calz',
     image: '',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur exercitationem hic nesciunt, voluptatibus commodi quasi magnam aperiam qui animi eius ipsa dolor, modi nulla reiciendis minima ipsam iste quaerat.',
-    githubLink: '',
+    githubLink: 'https://github.com/JacobReeder/Counting-Calz-2.0',
     deployLink: ''
   },
   {

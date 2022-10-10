@@ -1,9 +1,10 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+
 import { Box, styled } from "@mui/material";
 
 import Layout from "./Layout/layout";
-import { Home, Navbar, SideDrawer, Projects, Resume } from "./components";
+import AnimatedRoutes from "./components/AnimatedRoutes";
+import {  SideDrawer } from "./components";
 
 const FlexBoxed = styled(Box)({
   display: "flex",
@@ -17,13 +18,7 @@ function App() {
       {/* <Navbar /> */}
       <SideDrawer />
       <Layout>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Home />} />
-        </Routes>
+        <AnimatedRoutes />
       </Layout>
     </FlexBoxed>
   );

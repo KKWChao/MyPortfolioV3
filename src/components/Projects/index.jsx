@@ -9,12 +9,16 @@ import {
 } from "@mui/material";
 
 import { ProjectData } from "./projectData";
-import { ComponentBox } from "../reusables";
+import { AnimatedDiv } from "../reusables";
 import { theme } from "../../theme";
 
 function Projects() {
   return (
-    <ComponentBox>
+    <AnimatedDiv
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Typography variant="h1">Projects</Typography>
       <Grid
         container
@@ -27,7 +31,7 @@ function Projects() {
               sx={{
                 minWidth: 200,
                 maxWidth: 500,
-                padding: '1rem',
+                padding: "1rem",
                 boxShadow: 5,
                 background: theme.palette.secondary.dark,
               }}
@@ -59,6 +63,8 @@ function Projects() {
                 sx={{ display: "flex", justifyContent: "space-around" }}
               >
                 <Button
+                  href={project.githubLink}
+                  target="_blank"
                   size="small"
                   sx={{
                     padding: "0.5rem 2rem",
@@ -69,6 +75,8 @@ function Projects() {
                   Github
                 </Button>
                 <Button
+                  href={project.deployLink}
+                  target="_blank"
                   size="small"
                   sx={{
                     padding: "0.5rem 2rem",
@@ -83,7 +91,7 @@ function Projects() {
           </Grid>
         ))}
       </Grid>
-    </ComponentBox>
+    </AnimatedDiv>
   );
 }
 
