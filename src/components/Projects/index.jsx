@@ -81,6 +81,7 @@ function Projects() {
                 <Button
                   href={project.githubLink}
                   target="_blank"
+                  rel="noopener"
                   size="small"
                   sx={{
                     padding: "0.5rem 2rem",
@@ -93,6 +94,7 @@ function Projects() {
                 <Button
                   href={project.deployLink}
                   target="_blank"
+                  rel="noopener"
                   size="small"
                   sx={{
                     padding: "0.5rem 2rem",

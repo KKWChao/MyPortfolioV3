@@ -31,6 +31,7 @@ function index() {
           <ListItemButton
             href="https://github.com/KKWChao"
             target="_blank"
+            rel="noopener"
             sx={{ color: theme.palette.primary.main }}
           >
             <Box display="flex" gap="1rem">
@@ -43,6 +44,7 @@ function index() {
           <ListItemButton
             href="https://www.linkedin.com/in/kelvinkchao/"
             target="_blank"
+            rel="noopener"
             sx={{ color: theme.palette.primary.main }}
           >
             <Box display="flex" gap="1rem">
