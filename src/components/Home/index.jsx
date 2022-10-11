@@ -1,4 +1,4 @@
-import { Box, Paper, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { AnimatedDiv } from "../reusables";
 import { theme } from "../../theme";
 

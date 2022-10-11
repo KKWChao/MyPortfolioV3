@@ -29,7 +29,7 @@ function Projects() {
           <Grid
             container
             direction='column'
-            xs={2}
+            xs={1}
             sm={4}
             md={4}
             key={index}
