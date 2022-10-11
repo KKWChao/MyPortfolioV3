@@ -89,7 +89,20 @@ function Resume() {
           </Box>
         </Box>
       </Paper>
-      <Button sx={{ color: theme.palette.text.dark }}>Download</Button>
+      <Button
+        href="./assets/Kelvin_Chao_Resume.pdf"
+        download="KelvinChaoResume.pdf"
+        target="_blank"
+        rel="noopener"
+        sx={{
+          marginTop: "1rem",
+          alignSelf: "center",
+          width: "30%",
+          color: theme.palette.text.dark,
+        }}
+      >
+        Download
+      </Button>
     </AnimatedDiv>
   );
 }
