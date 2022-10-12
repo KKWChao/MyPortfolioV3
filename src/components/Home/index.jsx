@@ -21,7 +21,7 @@ function Home() {
         <Box align="left" sx={{ padding: 5 }}>
           {/* add loading later */}
           <img
-            src="./assets/Profile.jpg"
+            src="./assets/Profile1Square.jpg"
             alt="profile"
             style={{
               borderRadius: "20%",

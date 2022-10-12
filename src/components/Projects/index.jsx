@@ -29,7 +29,7 @@ function Projects() {
           <Grid
             container
             direction='column'
-            xs={1}
+            xs={2}
             sm={4}
             md={4}
             key={index}
@@ -40,10 +40,9 @@ function Projects() {
               sx={{
                 padding: 1,
                 margin: 1,
-                minWidth: 200,
-                width: 400,
-                maxWidth: 500,
-                height: 350,
+                minWidth: 250,
+                maxWidth: 400,
+                minheight: 350,
                 boxShadow: 5,
                 background: theme.palette.secondary.dark,
               }}
